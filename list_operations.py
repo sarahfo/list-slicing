@@ -24,8 +24,8 @@ def head(input_list):
     Return the first element of the input list.
     [ A, B, C, D, E, F ] --> A
     """
+    return input_list[0]
 
-    return None
 
 
 def tail(input_list):
@@ -34,7 +34,7 @@ def tail(input_list):
     [ A, B, C, D ] --> [ B, C, D ]
     """
 
-    return []
+    return input_list[1:]
 
 
 def last(input_list):
@@ -43,8 +43,8 @@ def last(input_list):
     [ A, B, C, D ] --> D
     """
 
-    return []
-
+    return input_list[-1]
+    # we could maybe also use input_list.pop()
 
 def init(input_list):
     """
@@ -52,8 +52,7 @@ def init(input_list):
     [ A, B, C, D ] --> [ A, B, C ]
     """
 
-    return []
-
+    return input_list[:-1]
 
 ##############################################################################
 # Do yourself a favor and get a short code review here.
