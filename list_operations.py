@@ -65,7 +65,7 @@ def first_three(input_list):
     [ A, B, C, D, E, F ] --> [ A, B, C ]
     """
 
-    return input_list[0:4]
+    return input_list[0:3]
 
 
 def last_five(input_list):
@@ -102,7 +102,7 @@ def inner_four_end(input_list):
     [ A, B, C, D, E, F, G, H, I, J, K, L] --> [ G, H, I, J ]
     """
 
-    return input_list[-6:-3]
+    return input_list[-6:-2]
 
 
 def replace_head(input_list):
@@ -119,7 +119,7 @@ def replace_third_and_last(input_list):
     Replace the third and last elements of the input list with the value 37.
     [ A, B, C, D, E, F ] --> [ A, B, 37, D, E, 37 ]
     """
-    input_list[3], input_list[-1] = 37, 37
+    input_list[2], input_list[-1] = 37, 37
    
 
 
