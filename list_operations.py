@@ -102,7 +102,7 @@ def inner_four_end(input_list):
     [ A, B, C, D, E, F, G, H, I, J, K, L] --> [ G, H, I, J ]
     """
 
-    return input_list[-3:-6]
+    return input_list[-6:-3]
 
 
 def replace_head(input_list):
@@ -110,8 +110,8 @@ def replace_head(input_list):
     Replace the head of the input list with the value 42.
     [ A, B, C, D ] --> [ 42, B, C, D]
     """
-
-    pass
+    input_list[0] = 42
+    
 
 
 def replace_third_and_last(input_list):
@@ -119,8 +119,8 @@ def replace_third_and_last(input_list):
     Replace the third and last elements of the input list with the value 37.
     [ A, B, C, D, E, F ] --> [ A, B, 37, D, E, 37 ]
     """
-
-    pass
+    input_list[3], input_list[-1] = 37, 37
+   
 
 
 def replace_middle(input_list):
@@ -129,8 +129,8 @@ def replace_middle(input_list):
     that order, except for the first two and last two elements.
     [ A, B, C, D, E, F, G, H, I ] --> [ A, B, 42, 37, H, I ]
     """
+    input_list[2:-2] = [42, 37]
 
-    pass
 
 
 def delete_third_and_seventh(input_list):
@@ -139,8 +139,8 @@ def delete_third_and_seventh(input_list):
     [ A, B, C, D, E, F, G, H ] --> [ A, B, D, E, F, H ]
     """
 
-    pass
-
+    del input_list[6], input_list[2]
+    # have to remove from the end of the list first in order to not alter the count.
 
 def delete_middle(input_list):
     """
@@ -148,8 +148,7 @@ def delete_middle(input_list):
     last two.
     [ A, B, C, D, E, F, G, H ] --> [ A, B, G, H ]
     """
-
-    pass
+    del input_list[2:-2]
 
 
 ##############################################################################
