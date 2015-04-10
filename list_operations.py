@@ -150,6 +150,8 @@ def delete_middle(input_list):
     """
     del input_list[2:-2]
 
+# the_list = [ 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
+
 
 ##############################################################################
 # END OF MAIN EXERCISE
@@ -176,8 +178,11 @@ def custom_len(input_list):
     """
     like len(input_list), should return the number of items in the list
     """
+    length_of_list = 0
+    for items in input_list:
+        length_of_list = length_of_list + 1
 
-    return 0
+    return length_of_list
 
 
 # For the next four exercises, you'll need to be clever and think about ways
@@ -194,15 +199,16 @@ def custom_append(input_list, value):
     like input_list.append(value), should add the value to the end of the list
     and return nothing
     """
+    input_list = input_list + [value]
 
-    pass
-
+    
 
 def custom_extend(input_list, second_list):
     """
     like input_list.extend(second_list), should append every item in the second
     list to the end of the first list and return nothing
     """
+    
 
     pass
 
